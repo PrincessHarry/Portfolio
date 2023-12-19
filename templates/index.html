@@ -1,0 +1,326 @@
+{% load static %}  
+
+	<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Princess Harry</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <script src="https://kit.fontawesome.com/ed7eb456dc.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'index.css' %}">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand brand-text" href="#">Princess Harry</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+             <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+       
+     </ul>
+  </div>
+</nav>
+ 
+
+	<div class="side_icons">
+	<ul>
+		<li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+		<li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+		<li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+		<li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+		<li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
+	</ul>
+
+	</div>
+	<section class="all">
+
+	<section class="intro">
+
+		<div class="container">
+   <div class="row info">
+      <div class="col-lg-6 ">
+		<img src=" {% static 'images/princess...png' %} " alt="Princess" class="princess_picture1 img-fluid">
+      </div>
+      <div class="col-lg-6 text">
+			<h3>Hello, I'm</h3>
+			<h1>Princess Harry</h1>
+			<div id="software-text"> <h6>Software Developer</h6></div>
+			<p>I code what you think.</p>
+			<div class="info_links">
+			<a href="#" class="contact">Hire Me</a>
+			<a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
+			</div>
+		</div>
+      </div>
+   </div>
+
+
+	</section>
+	
+	<a name="about"></a>
+<section class="about_me">
+	
+<div class="container">
+	<h1>About Me</h1>
+	<div class="row about_details">
+	   <div class="col-lg-6 ">
+		<div class=" animate__animated animate__zoomIn animate__delay-2s"><img src=" {% static 'images/princess.....png' %} " alt="Princess" class="princess_picture2  img-fluid"></div>
+	   </div>
+	   <div class="col-lg-6 about_text">
+		<p>Hi! My name is Princess Harry and I am a Software Developer with 1year of experience in both web and mobile applications.
+			I have a strong passion for technology and enjoy working on projects that challenge me to learn new skills and technigues. My expertise includes front-end web development using HTML, CSS, Javascript, and Bootstrap, as well as back-end web development using Django, and SQL. I also  excel in building cross-platform mobile applications using Flutter and Firebase. This dual proficiency allows me to seamlessly extend your digital presence across various platforms.
+			Throughout my career, I have worked on various projects ranging from organization website to e-commerce website, Language learning App, E.T.C  Which has given me a broad range of experience and knowledge. My goal is always to create high-quality, responsive, and user-friendly applications that meet the needs of my clients.
+		   In addition to my technical skills, I am a team player who enjoys collaborating with other developers and stakeholders to create solutions that exceed expections. I am also a quick learner who is willing to take on new challenges and keep up-to-date with the latest technologies and trends.
+		   If you're looking for a Software Developer who is passionate about building innovative applications and delivering exceptional results, then i'd love to hear from you!</p>
+		   <div class="about-icons">
+			<div><i class="fa-solid fa-user"></i>Princess Harry</div>
+			<div><i class="fa-solid fa-phone"></i>+234 703 231 8369</div>
+			<div><i class="fa-solid fa-envelope"></i>harryprincess419@gmail.com</div>
+			
+		</div>
+
+		<div class="resume"><a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
+			
+		 </div>
+		 </div>
+	   </div>
+	</div>
+</section>
+
+<a name="services"></a>
+	<section class="services">
+		<h1>What I Do</h1>
+		<div class="my_services">
+<div class="web dev">
+	<i class="fa-solid fa-code"></i>
+	<h2>Web Development</h2>
+	<p>With years of experiencein web development, I can create custom, responsive, and user-friendly websites tailored to your business needs. From static to dynamic websites, I can build anything you need using the latest web technologies.</p>
+</div>
+<div class="app dev">
+	<i class="fa-solid fa-mobile-alt"></i>
+	<h2>App Development</h2>
+	<p>From iOS to Android, and cross platform, I can develop customized mobile applications that meet your business needs. With experience in native and hybrid app development, I can create apps that are user-friendly, secure, and scalable. Let me help you take your business to the next level with a mobile app.</p>
+</div>
+	</section>
+
+	<a name="skills"></a>
+	<section class="skills">
+		<h1>My Skills</h1>
+		<div class="my_skills">
+		<div class="skill">
+			<h3>HTML</h3>
+			<div class="progress-bar">
+				<div class="progress" style="width:98%;"><span>98%</span></div>
+			</div>
+		</div>
+		<div class="skill">
+			<h3>CSS</h3>
+			<div class="progress-bar">
+				<div class="progress" style="width:85% ;"><span>85%</span></div>
+			</div>
+</div>
+<div class="skill">
+	<h3>Javascript</h3>
+	<div class="progress-bar">
+		<div class="progress" style="width:70% ;"><span>70%</span></div>
+	</div>
+</div>
+<div class="skill">
+	<h3>Bootstrap</h3>
+	<div class="progress-bar">
+		<div class="progress" style="width:87% ;"><span>87%</span></div>
+	</div>
+</div>
+<div class="skill">
+	<h3>Django</h3>
+	<div class="progress-bar">
+		<div class="progress" style="width: 75%;"><span>75%</span></div>
+	</div>
+</div>
+
+</div>
+	</section>
+
+
+		
+		<!-- <div class="my_project">
+			<div class="project_1">
+				<a href="#"><img src="napss.png" alt="organization website"></a>
+				<h3>Organisation Website</h3>
+				<a href="#" class="name-link">NAPSS</a>
+				<p>HTML, CSS, Javascript, and django</p>
+			</div>
+
+			<div class="project_2">
+				<a href="#"><img src="data.png" alt="e-commerce website"></a>
+				<h3>E-commerce Website</h3>
+				<a href="#" class="name-link">InfinityData</a>
+				<p>HTML, CSS, Javascript, and django</p>
+			</div>
+			<div class="project_3">
+				<a href="#" ><img src="portfolio.png" alt="portfolio website"></a>
+				<h3>Portfolio Website</h3>
+				<a href="#" class="name-link">Princess Harry</a>
+				<p>HTML, CSS, Javascript, and django</p>
+			</div>
+		</div> -->
+
+		<a name="portfolio"></a>
+		<section class="projects">
+			<h1>My Recent Projects</h1>
+			<div class="my_project">
+				{% for project in projects %}
+				<div class="project">
+					{% if project.image %}
+					<img src=" {{ project.image.url }}" alt="{{ project.title  }}">
+					{% endif %}
+					<h3 class="name-link">{{ project.title  }}</h3>
+					<p>{{ project.technologies }}</p>
+					<p>{{ project.description }}</p>
+					{% if project.demo_url %}
+					<a href="{{ project.demo_url }}" class="demo">Demo</a>
+					{% endif %}
+				</div>
+				{% endfor %}
+			</div>
+			<div class="controls">
+				<div class="prev-btn" onclick="prevProjectSlide()">&#10094;</div>
+				<div class="next-btn" onclick="nextProjectSlide()">&#10095;</div>
+			</div>
+			<div class="indicators"></div>
+		</section>
+			
+		<a name="testimonial"></a>
+	<section class="testimonials">
+		<h2>What People Are Saying About Me</h2>
+		<div class="testimonial-container">
+		<div class="testimonial">
+		<img src=" {% static 'images/ client1.png' %}" alt="Client 1">
+		<p>"Princess was amazing to work with. She delivered our project on time and within budget. We were impressed with her attention  to detail and her ability to turn our ideas into reality. We highly recommend her to anyone looking for a talented software developer.</p>
+		<cite>- Rex Bethel</cite>	
+		</div>
+		<div class="testimonial">
+			<img src="{% static 'images/client2.png' %} " alt="Client 2">
+			<p>"I was blown away by Princess's technical expertise and her ability to solve complex problems. She was always available to answer my questions and provide guidance. She is a true professional and I would definitely work with her again in the future."</p>
+			<cite>- Mark Johnson, founder of Royal Startup</cite>
+		</div>
+		</div>
+	</section>
+	</section>
+<!-- 
+	<a name="contact"></a>
+<section class="contact">
+	<div class="contact_me">
+		<h2>Let's work together on your next  project</h2>
+		<form method="post" action=" {% url 'home' %} " class="needs-validation" novalidate>
+			
+				{% csrf_token %}
+				{{ form.non_field_errors }}
+	
+				<div class="mb-3">
+					{{ form.name.label_tag }}
+					{{ form.name }}
+					{{ form.name.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.email.label_tag }}
+					{{ form.email }}
+					{{ form.email.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.subject.label_tag }}
+					{{ form.subject }}
+					{{ form.subject.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.message.label_tag }}
+					{{ form.message }}
+					{{ form.message.errors }}
+				</div>
+	
+			
+			<button type="submit">Send</button>
+
+		</form>
+	</div>
+        
+		</section> -->
+
+		<footer>
+			<div class="footer">
+				
+	<a name="contact"></a>
+<div class="contact">
+	<div class="contact_me">
+		<h2>Let's work together on your next  project</h2>
+		<form method="post" action=" {% url 'home' %} " class="needs-validation" novalidate>
+			
+				{% csrf_token %}
+				{{ form.non_field_errors }}
+	
+				<div class="mb-3">
+					{{ form.name.label_tag }}
+					{{ form.name }}
+					{{ form.name.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.email.label_tag }}
+					{{ form.email }}
+					{{ form.email.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.subject.label_tag }}
+					{{ form.subject }}
+					{{ form.subject.errors }}
+				</div>
+	
+				<div class="mb-3">
+					{{ form.message.label_tag }}
+					{{ form.message }}
+					{{ form.message.errors }}
+				</div>
+	
+			
+			<button type="submit">Send</button>
+
+		</form>
+	</div>
+        
+		<hr>
+			<div class="follow">
+				<h2>Connect With Me</h2>
+			<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+			<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+			<a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+			</div>
+			<div class="copyright">
+			<p>&copy; 2023 Princess Harry. All rights reserved.</p>
+			</div>
+			</div>
+		</footer>
+		
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+		<script type="text/Javascript" src="{% static 'index.js' %}"></script>
+		</body>
+		</html>
