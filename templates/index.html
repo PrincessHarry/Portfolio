@@ -33,18 +33,9 @@
 </nav>
  
 
-	<div class="side_icons">
-	<ul>
-		<li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-		<li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-		<li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-		<li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
-		<li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
-	</ul>
-
-	</div>
-	<section class="all">
-
+	
+	
+<!-- 
 	<section class="intro">
 
 		<div class="container">
@@ -58,7 +49,7 @@
 			<div id="software-text"> <h6>Software Developer</h6></div>
 			<p>I code what you think.</p>
 			<div class="info_links">
-			<a href="#" class="contact">Hire Me</a>
+			<a href="#" class="hire">Hire Me</a>
 			<a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
 			</div>
 		</div>
@@ -66,7 +57,80 @@
    </div>
 
 
-	</section>
+	</section> -->
+	
+	<section class="intro">
+
+		<div class="container">
+   <div class="row info">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+	<defs>
+		<linearGradient id="bg">
+			<stop offset="0%" style="stop-color:rgba(146, 95, 240, 0.06)"></stop>
+			<stop offset="50%" style="stop-color:rgba(146, 95, 240, 0.6)"></stop>
+			<stop offset="100%" style="stop-color:rgba(152, 106, 237, 0.2)"></stop>
+		</linearGradient>
+		<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+	</defs>
+	<g>
+		<use xlink:href='#wave' opacity=".3">
+			<animateTransform
+	  attributeName="transform"
+	  attributeType="XML"
+	  type="translate"
+	  dur="10s"
+	  calcMode="spline"
+	  values="270 230; -334 180; 270 230"
+	  keyTimes="0; .5; 1"
+	  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+	  repeatCount="indefinite" />
+		</use>
+		<use xlink:href='#wave' opacity=".6">
+			<animateTransform
+	  attributeName="transform"
+	  attributeType="XML"
+	  type="translate"
+	  dur="8s"
+	  calcMode="spline"
+	  values="-270 230;243 220;-270 230"
+	  keyTimes="0; .6; 1"
+	  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+	  repeatCount="indefinite" />
+		</use>
+		<use xlink:href='#wave' opacty=".9">
+			<animateTransform
+	  attributeName="transform"
+	  attributeType="XML"
+	  type="translate"
+	  dur="6s"
+	  calcMode="spline"
+	  values="0 230;-140 200;0 230"
+	  keyTimes="0; .4; 1"
+	  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+	  repeatCount="indefinite" />
+		</use>
+	</g>
+</svg>
+<div class="col-lg-6 ">
+	<img src=" {% static 'images/princess...png' %} " alt="Princess" class="princess_picture1 img-fluid">
+  </div>
+  <div class="col-lg-6 text">
+		<h3>Hello, I'm</h3>
+		<h1 style="color: #925FF0;">Princess Harry</h1>
+		<div id="software-text"> <h6>Software Developer</h6></div>
+		<p style="font-style: italic;">I code what you think.</p>
+		<div class="info_links">
+		<a href="#" class="hire">Hire Me</a>
+		<a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
+		</div>
+	</div>
+      </div>
+   </div>
+
+
+	</section> -->
 	
 	<a name="about"></a>
 <section class="about_me">
@@ -75,20 +139,10 @@
 	<h1>About Me</h1>
 	<div class="row about_details">
 	   <div class="col-lg-6 ">
-		<div class=" animate__animated animate__zoomIn animate__delay-2s"><img src=" {% static 'images/princess.....png' %} " alt="Princess" class="princess_picture2  img-fluid"></div>
+		<div class=" animate__animated animate__zoomIn animate__delay-2s"><img src=" {% static 'images/laptop1.png' %} " alt="Princess" class="princess_picture2  img-fluid"></div>
 	   </div>
 	   <div class="col-lg-6 about_text">
-		<p>Hi! My name is Princess Harry and I am a Software Developer with 1year of experience in both web and mobile applications.
-			I have a strong passion for technology and enjoy working on projects that challenge me to learn new skills and technigues. My expertise includes front-end web development using HTML, CSS, Javascript, and Bootstrap, as well as back-end web development using Django, and SQL. I also  excel in building cross-platform mobile applications using Flutter and Firebase. This dual proficiency allows me to seamlessly extend your digital presence across various platforms.
-			Throughout my career, I have worked on various projects ranging from organization website to e-commerce website, Language learning App, E.T.C  Which has given me a broad range of experience and knowledge. My goal is always to create high-quality, responsive, and user-friendly applications that meet the needs of my clients.
-		   In addition to my technical skills, I am a team player who enjoys collaborating with other developers and stakeholders to create solutions that exceed expections. I am also a quick learner who is willing to take on new challenges and keep up-to-date with the latest technologies and trends.
-		   If you're looking for a Software Developer who is passionate about building innovative applications and delivering exceptional results, then i'd love to hear from you!</p>
-		   <div class="about-icons">
-			<div><i class="fa-solid fa-user"></i>Princess Harry</div>
-			<div><i class="fa-solid fa-phone"></i>+234 703 231 8369</div>
-			<div><i class="fa-solid fa-envelope"></i>harryprincess419@gmail.com</div>
-			
-		</div>
+		<p>I'm a skilled Software Developer specializing in front-end (HTML, CSS, JavaScript, Bootstrap) and back-end (Django, SQL) web development. With diverse project experience, I create high-quality, responsive applications. A collaborative team player and avid learner, I'm passionate about delivering innovative solutions. Let's connect for exceptional results!</p>
 
 		<div class="resume"><a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
 			
@@ -100,23 +154,65 @@
 
 <a name="services"></a>
 	<section class="services">
+		<div class="container">
 		<h1>What I Do</h1>
-		<div class="my_services">
-<div class="web dev">
+		<div class="row">
+			
+<div class=" col-md-4 mb-4 ">
+	<div class="web dev">
 	<i class="fa-solid fa-code"></i>
 	<h2>Web Development</h2>
-	<p>With years of experiencein web development, I can create custom, responsive, and user-friendly websites tailored to your business needs. From static to dynamic websites, I can build anything you need using the latest web technologies.</p>
+	<p>Building websites that fit your needs using the latest web technologies.</p>
 </div>
-<div class="app dev">
+</div>
+<div class=" col-md-4 mb-4 ">
+	<div class="app dev">
 	<i class="fa-solid fa-mobile-alt"></i>
 	<h2>App Development</h2>
-	<p>From iOS to Android, and cross platform, I can develop customized mobile applications that meet your business needs. With experience in native and hybrid app development, I can create apps that are user-friendly, secure, and scalable. Let me help you take your business to the next level with a mobile app.</p>
+	<p>Crafting cross-platform mobile apps: user-friendly, secure, and tailored to your needs.</p>
 </div>
+</div>
+</div>
+</div>
+
+
 	</section>
 
 	<a name="skills"></a>
 	<section class="skills">
 		<h1>My Skills</h1>
+		
+			<div class="row">
+				<div class="icons-container">
+			  <div class="col-md-4 mb-4">
+				<i class=" fa fa-html5 html-icon icon"></i>
+				
+			  </div>
+			  
+			  <div class="col-md-4 mb-4">
+				
+				<i class="fa-brands fa-css3-alt css-icon icon"></i>
+			  </div>
+			  <div class="col-md-4 mb-4">
+				<i class="fa-brands fa-js js-icon icon"></i>
+			  </div>
+			  <div class="col-md-4 mb-4">
+				<i class="fa-brands fa-python python-icon icon"></i>
+			  </div>
+              <div class="col-md-4 mb-4">
+				
+				<i class="fa-brands fa-square-github github-icon icon"></i>
+			  </div>
+			  <div class="col-md-4 mb-4">
+				
+				<i class="fa-brands fa-bootstrap bootstrap-icon icon"></i>
+			  </div>
+			  <div class="col-md-4 mb-4">
+				
+				<i class="fa fa-code code-icon icon"></i>
+			  </div>
+			  </div>
+			</div>
 		<div class="my_skills">
 		<div class="skill">
 			<h3>HTML</h3>
@@ -150,6 +246,7 @@
 </div>
 
 </div>
+		
 	</section>
 
 
@@ -186,11 +283,11 @@
 					<img src=" {{ project.image.url }}" alt="{{ project.title  }}">
 					{% endif %}
 					<h3 class="name-link">{{ project.title  }}</h3>
-					<p>{{ project.technologies }}</p>
 					<p>{{ project.description }}</p>
 					{% if project.demo_url %}
 					<a href="{{ project.demo_url }}" class="demo">Demo</a>
 					{% endif %}
+					<p class="tech">{{ project.technologies }}</p>
 				</div>
 				{% endfor %}
 			</div>
@@ -218,9 +315,9 @@
 		</div>
 	</section>
 	</section>
-<!-- 
-	<a name="contact"></a>
-<section class="contact">
+
+	
+<!-- <section class="contact">
 	<div class="contact_me">
 		<h2>Let's work together on your next  project</h2>
 		<form method="post" action=" {% url 'home' %} " class="needs-validation" novalidate>
@@ -260,63 +357,71 @@
         
 		</section> -->
 
-		<footer>
-			<div class="footer">
+		<a name="contact"></a>
+		<section class="contact">
+	
+			<div class="container">
 				
-	<a name="contact"></a>
-<div class="contact">
-	<div class="contact_me">
-		<h2>Let's work together on your next  project</h2>
-		<form method="post" action=" {% url 'home' %} " class="needs-validation" novalidate>
+				<div class="row contact_me">
+					
+				   <div class="col-lg-6 contact-form">
+					<h1>Send me a message.</h1>
+				<p>Let's make something amazing together.</p>
+					<form method="post" action=" {% url 'home' %} " class="needs-validation" novalidate>
 			
-				{% csrf_token %}
-				{{ form.non_field_errors }}
-	
-				<div class="mb-3">
-					{{ form.name.label_tag }}
-					{{ form.name }}
-					{{ form.name.errors }}
-				</div>
-	
-				<div class="mb-3">
-					{{ form.email.label_tag }}
-					{{ form.email }}
-					{{ form.email.errors }}
-				</div>
-	
-				<div class="mb-3">
-					{{ form.subject.label_tag }}
-					{{ form.subject }}
-					{{ form.subject.errors }}
-				</div>
-	
-				<div class="mb-3">
-					{{ form.message.label_tag }}
-					{{ form.message }}
-					{{ form.message.errors }}
-				</div>
-	
+						{% csrf_token %}
+						{{ form.non_field_errors }}
 			
-			<button type="submit">Send</button>
-
-		</form>
-	</div>
-        
-		<hr>
-			<div class="follow">
-				<h2>Connect With Me</h2>
-			<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-			<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
-			<a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-			<a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-			<a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
-			</div>
-			<div class="copyright">
-			<p>&copy; 2023 Princess Harry. All rights reserved.</p>
-			</div>
-			</div>
-		</footer>
+						<div class="mb-3">
+						
+							{{ form.name }}
+							{{ form.name.errors }}
+						</div>
+			
+						<div class="mb-3">
+						
+							{{ form.email }}
+							{{ form.email.errors }}
+						</div>
+			
+						<div class="mb-3">
+							
+							{{ form.subject }}
+							{{ form.subject.errors }}
+						</div>
+			
+						<div class="mb-3">
+							
+							{{ form.message }}
+							{{ form.message.errors }}
+						</div>
+			
+					
+					<button type="submit">Send</button>
 		
+				</form>
+				   </div>
+				   <div class="col-lg-6">
+					<div class=" "><img src=" {% static 'images/Tel.png' %} " alt="Princess" class="princess_picture2  img-fluid"></div>
+						
+					 </div>
+					 </div>
+				   </div>
+				</div>
+			</section>
+
+					<footer class="bg-dark text-white py-3">
+						<div class="container text-center">
+						<p>&copy; {{ current_year }}Princess Harry. All rights reserved.</p>
+					  </div>
+					  <div class="social-links container text-center">
+						<a href="#"><i class="fa fa-facebook " aria-hidden="true" ></i></a>
+						<a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					   <a href="#"><i class="fa-brands fa-github"></i></a>
+						</div>
+					</footer>
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

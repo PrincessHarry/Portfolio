@@ -97,3 +97,20 @@ updateProjectIndicators();
 //   }, 100);
 // }
 // addTypingEffect(text);
+
+//skill background
+// function random(min, max) {
+//     return Math.random() * (max - min) + min;
+//   }
+  
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const icons = document.querySelectorAll('.icon');
+//     icons.forEach(icon => {
+//       const left = random(0, window.innerWidth - 50); // Adjust the width of the icon
+//       const top = random(0, window.innerHeight - 50); // Adjust the height of the icon
+//       icon.style.left = left + 'px';
+//       icon.style.top = top + 'px';
+//     });
+//   });
+  
+  
