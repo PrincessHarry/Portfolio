@@ -113,4 +113,11 @@ updateProjectIndicators();
 //     });
 //   });
   
-  
+const typeWriter = document.getElementById('typewriter-text');
+const text = 'Software Developer';
+typeWriter.innerHTML = text;
+typeWriter.style.setProperty('--characters', text.length);
+
+
+
+    AOS.init();

@@ -9,12 +9,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <script src="https://kit.fontawesome.com/ed7eb456dc.js" crossorigin="anonymous"></script>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'index.css' %}">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link rel='stylesheet' type='text/css' media='screen' href="{% static 'index.css' %}">
 </head>
 <body>
 
    <nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand brand-text" href="#">Princess Harry</a>
+  <a class="logo" href="#"><img src="{% static 'images/logo_transparent.png' %}" alt="Ahub"></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
@@ -119,8 +121,12 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
   <div class="col-lg-6 text">
 		<h3>Hello, I'm</h3>
 		<h1 style="color: #925FF0;">Princess Harry</h1>
-		<div id="software-text"> <h6>Software Developer</h6></div>
-		<p style="font-style: italic;">I code what you think.</p>
+		<!-- <div id="software-text"> <h6>Software Developer</h6></div>
+		<p style="font-style: italic;">I code what you think.</p> -->
+		<div class="typewriter-effect">
+  <div class="text" id="typewriter-text"></div>
+</div>
+
 		<div class="info_links">
 		<a href="#" class="hire">Hire Me</a>
 		<a href="{% static 'Princess Harry Resume.pdf' %}" class="resume" download="Princess Harry Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a>
@@ -158,18 +164,25 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
 		<h1>What I Do</h1>
 		<div class="row">
 			
-<div class=" col-md-4 mb-4 ">
+<div class=" col-md-4 mb-4 " >
+
+	<div class="service-dev" data-aos="fade-right" data-aos-offset="200" >
+		
 	<div class="web dev">
-	<i class="fa-solid fa-code"></i>
+	
+		<i class="fa-solid fa-code "></i>
 	<h2>Web Development</h2>
 	<p>Building websites that fit your needs using the latest web technologies.</p>
 </div>
 </div>
-<div class=" col-md-4 mb-4 ">
+</div>
+<div class=" col-md-4 mb-4 " >
+		<div class="service-dev" data-aos="fade-left" data-aos-offset="200" >
 	<div class="app dev">
-	<i class="fa-solid fa-mobile-alt"></i>
+<i class="fa-solid fa-mobile-alt "></i>
 	<h2>App Development</h2>
 	<p>Crafting cross-platform mobile apps: user-friendly, secure, and tailored to your needs.</p>
+</div>
 </div>
 </div>
 </div>
@@ -416,14 +429,18 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
 					  </div>
 					  <div class="social-links container text-center">
 						<a href="#"><i class="fa fa-facebook " aria-hidden="true" ></i></a>
-						<a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+						<a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
 						<a href="#"><i class="fa-brands fa-instagram"></i></a>
 					   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
 					   <a href="#"><i class="fa-brands fa-github"></i></a>
 						</div>
 					</footer>
-		
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+				
+		 <script src="./typed.js-master/lib/typed.min.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 		<script type="text/Javascript" src="{% static 'index.js' %}"></script>
